@@ -19,8 +19,12 @@ public class AppTest {
 		Assert.assertFalse("Not a palindrome", palindrome.isPalindrome("cara"));
 		Assert.assertFalse("Not a palindrome", palindrome.isPalindrome("#1441@#"));
 		Assert.assertFalse("Not a palindrome", palindrome.isPalindrome(null));
+		Assert.assertFalse("Not a palindrome", palindrome.isPalindrome("m!213_0x"));
 		Assert.assertTrue("Not a palindrome", palindrome.isPalindrome("carac"));
 		Assert.assertTrue("Not a palindrome", palindrome.isPalindrome("cara@3!-c-"));
+		Assert.assertTrue("Not a palindrome", palindrome.isPalindrome("m"));
+		Assert.assertTrue("Not a palindrome", palindrome.isPalindrome("mm"));
+		Assert.assertTrue("Not a palindrome", palindrome.isPalindrome("m!213_0m"));
 
 	}
 }
